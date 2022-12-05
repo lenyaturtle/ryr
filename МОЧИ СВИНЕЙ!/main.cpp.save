@@ -1,0 +1,333 @@
+
+
+#include "TXLib.h"
+//Итак.Это мой первый нормальный проект.
+void kursor(int x, int y)//x 565 y 145
+{
+    txSetColor (TX_BLACK);
+    txSetFillColor (TX_WHITE);
+    POINT strelka (3) = {{555,125},{555,150},{570,135}};
+    txPolygon(strelka, 3);
+    txSetColor (TX_WHITE);
+    txLine(x,y,570,155);
+}
+void nebo()
+{
+    txSetColor(RGB (128, 255, 255));
+    txSetFillColor (RGB (128, 255, 255));  //синий(голубой)
+    txRectangle (0, 495, 1152, 0);
+}
+void semlya()
+{
+    txSetColor(RGB (181, 230, 29));
+    txSetFillColor (RGB (181, 230, 29));//светло-зелёный
+    txRectangle (0, 495, 1152, 640);
+}
+void igra()
+{
+    txSetColor(RGB (0, 0, 0));//чёрный
+    txSetFillColor (RGB (255, 242, 0)); //жёлтый
+    txCircle(576,495,65);
+    txSetColor(TX_WHITE);
+    txSetFillColor (TX_WHITE);//белый
+    POINT igrat (3) = {{552,470},{551,531},{611,500}};
+    txPolygon(igrat, 3);
+}
+void sila()
+{
+    txSetColor(RGB (128, 255, 255));
+    txSetFillColor (RGB (128, 255, 255));//синий(голубой)
+    txCircle(808,495,65);
+    txSetColor(RGB (163, 73, 164));
+    txSetFillColor (RGB (163, 73, 164));//фиолетовый
+    POINT molnia (11) = {{780,475},{795,487},{795,472},{807,505},{805,508},{835,530},{820,502},{825,498},{812,483},{815,480},{803,460}};
+    txPolygon(molnia, 11);
+}
+void snania()
+{
+    txSetColor(RGB (34, 177, 76));
+    txSetFillColor (RGB (34, 177, 76));//тёмно-зелёный
+    txCircle(355,495,65);
+    txSetColor(RGB (185, 122, 87));//коричневый
+    txSetFillColor (RGB (185, 122, 87));
+    txRectangle(325,545,383,467);
+    txSetColor(RGB (163, 73, 164));
+    txSetFillColor (RGB (163, 73, 164));//фиолетовый
+    txCircle(354,508,20);
+}
+void xisina()
+{
+    txSetColor(RGB (185, 122, 87));//коричневый
+    txSetFillColor (RGB (185, 122, 87));
+    txRectangle(52,347,215,495);
+    txSetColor(RGB (255, 242, 0));
+    txSetFillColor (RGB (255, 242, 0)); //жёлтый
+    POINT soloma (3) = {{53,344},{135,278},{217,344}};
+    txPolygon(soloma, 3);
+    txSetColor(RGB (95, 58, 39));//тёмно-коричневый
+    txSetFillColor (RGB (95, 58, 39));
+    txRectangle(85,495,145,428);
+}
+void fakel()
+{
+    txSetColor(RGB (185, 122, 87));//коричневый
+    txSetFillColor (RGB (185, 122, 87));
+    txRectangle(947,395,972,495);
+    POINT fire (3) = {{945,392},{960,304},{972,392}};
+    txPolygon(fire, 3);
+}
+void dialog()
+{
+txSetColor(RGB(255, 255, 255));
+txSetFillColor(RGB(255, 255, 255));
+txSelectFont ("Arial", 90, 30, FW_BOLD);
+txDrawText   (396, 20, 730, 70, "BLOONS TD 6");
+}
+void ProblemOne()
+{
+txSetColor(RGB(255, 255, 255));
+txSetFillColor(RGB(255, 255, 255));
+txSelectFont ("Arial", 30, 10, FW_BOLD
+txDrawText   (1078, 160, 1130, 172, "Гонка");
+}
+void ProblemTwo()
+{
+txSetColor(RGB(255, 255, 255));
+txSetFillColor(RGB(255, 255, 255));
+txSelectFont ("Arial", 30, 10, FW_BOLD
+txDrawText   (1078, 295, 1130, 316, "Босс");
+}
+void CircleOne()
+{
+    txSetColor(RGB (185, 122, 87));//коричневый
+    txSetFillColor (RGB (34, 177, 76));//тёмно-зелёный
+    txCircle(1110,165,35);
+ }
+void CircleTwo()
+{
+    txSetColor(RGB (185, 122, 87));//коричневый
+    txSetFillColor (RGB (34, 177, 76));//тёмно-зелёный
+    txCircle(1110,102,35);
+}
+void dialog2()
+{
+txSetColor(RGB(255, 255, 255));
+txSetFillColor(RGB(255, 255, 255));
+txSelectFont ("Arial", 45, 15, FW_BOLD);
+txDrawText   (300, 560, 417, 586, "ЗНАНИЯ");
+}
+void dialog3()
+{
+txSetColor(RGB(255, 255, 255));
+txSetFillColor(RGB(255, 255, 255));
+txSelectFont ("Arial", 45, 15, FW_BOLD);
+txDrawText   (525, 560, 630, 590, "ИГРАТЬ");
+}
+void dialog4()
+{
+txSetColor(RGB(255, 255, 255));
+txSetFillColor(RGB(255, 255, 255));
+txSelectFont ("Arial", 45, 15, FW_BOLD);
+txDrawText   (745, 560, 862, 590, "СУПЕРСИЛЫ");
+}
+void travka()
+{
+    txSetColor(RGB (181, 230, 29));
+    txSetFillColor (RGB (181, 230, 29));//светло-зелёный
+    txRectangle(0, 0, 1152, 640)
+}
+void doroga()
+{
+    txSetColor(RGB (179, 89, 0));
+    txSetFillColor (RGB (179, 89, 0));//коричневый 2!!!!
+    txRectangle(0, 340, 490, 310)
+    txRectangle(455, 340, 500, 160)
+    txRectangle(455, 160, 675, 200)
+    txRectangle(677, 160, 640, 335)
+    txRectangle(640, 335, 1152, 300)
+}
+void menu()
+{
+    txSetColor(RGB (179, 89, 0));
+    txSetFillColor (RGB (179, 89, 0));//коричневый 2!!!!
+    txRectangle(1030, 0, 1152, 640)
+}
+void voinShip()
+{
+    txSetColor(RGB (179, 89, 0));//коричневый 2!!!!
+    txSetFillColor (TX_WHITE);//белый
+    txRectangle(1030, 0, 1152, 90)
+}
+void voinMech()
+{
+    txSetColor(RGB (179, 89, 0));//коричневый 2!!!!
+    txSetFillColor (TX_WHITE);//белый
+    txRectangle(1030, 90, 1152, 175)
+}
+void voinKopie()
+{
+    txSetColor(RGB (179, 89, 0));//коричневый 2!!!!
+    txSetFillColor (TX_WHITE);//белый
+    txRectangle(1030, 175, 1152, 255)
+}
+void voinShipTekst()
+{
+txSetColor(RGB(255, 255, 255));
+txSetFillColor(RGB(255, 255, 255));
+txSelectFont ("Arial", 45, 15, FW_BOLD);
+txDrawText   (1030, 25, 1125, , "Воин с\n"
+                                  "шипами");
+}
+void voinMechTekst()
+{
+txSetColor(RGB(255, 255, 255));
+txSetFillColor(RGB(255, 255, 255));
+txSelectFont ("Arial", 45, 15, FW_BOLD);
+txDrawText   (1032, 92, 1114, 155, "Воин с\n"
+                                   "мечом");
+}
+void voinKopieTekst()
+{
+txSetColor(RGB(255, 255, 255));
+txSetFillColor(RGB(255, 255, 255));
+txSelectFont ("Arial", 45, 15, FW_BOLD);
+txDrawText   (1035, 185, 1120, 235, "Воин с\n"
+                                  "копьём");
+}
+void voinShipTekstCena()
+{
+txSetColor(RGB(255, 255, 255));
+txSetFillColor(RGB(255, 255, 255));
+txSelectFont ("Arial", 45, 15, FW_BOLD);
+txDrawText   (1050, 58, 1120,90, "200$");
+}
+void voinMechTekstCena()
+{
+txSetColor(RGB(255, 255, 255));
+txSetFillColor(RGB(255, 255, 255));
+txSelectFont ("Arial", 45, 15, FW_BOLD);
+txDrawText   (1044, 140, 1105, 173, "325$");
+}
+void voinKopieTekstCena()
+{
+txSetColor(RGB(255, 255, 255));
+txSetFillColor(RGB(255, 255, 255));
+txSelectFont ("Arial", 45, 15, FW_BOLD);
+txDrawText   (1040, 225, 1103, 260, "400$");
+}
+void dengi()
+{
+    txSetColor(RGB (179, 89, 0));//коричневый 2!!!!
+    txSetFillColor (RGB (179, 89, 0));
+    txRectangle(22, 9, 126, 45)
+}
+void dengiSumma()
+{
+txSetColor(TX_YELLOW);
+txSetFillColor(TX_YELLOW);
+txSelectFont ("Arial", 45, 15, FW_BOLD);
+txDrawText   (37, 15, 106, 38, "650$");
+}
+void microchelik()
+{
+txSetColor (TX_WHITE, 4);
+txSetFillColor(TX_WHITE);
+txCircle(347,200,17)
+txLine(318,295,345,255)
+txLine(374,295,345,255)
+txLine(346,216,345,255)
+txLine(321,230,346,216)
+txLine(375,247,346,216)
+}
+void knopka()
+{
+    txSetColor(RGB (34, 177, 76));
+    txSetFillColor (RGB (34, 177, 76));//тёмно-зелёный
+    txRectangle(1095, 590, 1150, 637)
+    txSetColor(TX_WHITE);
+    txSetFillColor (TX_WHITE);//белый
+    POINT vpered (3) = {{1107,595},{1145,615},{1107,635}};
+    txPolygon(vpered, 3);
+}
+void knopkaSila()
+{
+    txSetColor(RGB (128, 255, 255));
+    txSetFillColor (RGB (128, 255, 255));//синий (голубой)
+    txRectangle(1030, 590, 1091, 638)
+    txSetColor(RGB (163, 73, 164));
+    txSetFillColor (RGB (163, 73, 164));//фиолетовый
+    POINT minimolnia (11) = {{1040,600},{1052,608},{1048,612},{1060,620},{1057,623},{1075,635},{1067,618},{1070,615},{1059,606},{1063,602},{1055,592}};
+    txPolygon(molnia, 11);
+}
+void knopkaBoss()   
+{
+    txSetColor(TX_BLACK);//Чёрный
+    txSetFillColor (TX_BLACK);
+    txRectangle(1026, 537, 1150, 587)
+}
+void ship()
+{
+    POINT ostro (3) = {{317,213},{317,237},{297,225}};
+    txPolygon(ostro, 3);
+int main()
+{
+    txCreateWindow (800, 600);
+    int xKursor = 565
+    int yKursor = 145
+    while (yKursor < 495)
+    {
+        txBegin();
+        kursor(int x,int y)
+        nebo()
+        semlya()
+        igra()
+        sila()
+        snania()
+        xisina()
+        fakel()
+        dialog()
+        ProblemOne()
+        ProblemTwo()
+        CircleOne()
+        CircleTwo()
+        dialog2()
+        dialog3()
+        dialog4()
+    
+    
+        yKursor = yKursor + 10
+        txSleep(1);
+        txEnd();
+    }
+while (xKursor < 1110)
+    {
+        txBegin();
+        kursor(int x,int y)
+        nebo()
+        semlya()
+        igra()
+        sila()
+        snania()
+        xisina()
+        fakel()
+        dialog()
+        ProblemOne()
+        ProblemTwo()
+        CircleOne()
+        CircleTwo()
+        dialog2()
+        dialog3()
+        dialog4()
+    
+    
+    xKursor = xKursor + 10
+    txSleep(1);
+    txEnd();
+    }
+nebo()
+semlya()
+igra()
+while 
+    return 0;
+    }
+
